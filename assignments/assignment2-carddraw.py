@@ -50,15 +50,19 @@ is_straight = all(numeric_values[i] + 1 == numeric_values[i + 1] for i in range(
 if numeric_values == [2, 3, 4, 5, 14]: 
     is_straight = True
 
-print('\nResult:')
+if is_flush or is_straight or is_triple or is_pair:
+    print("\nCongratulations!")
+else:
+    print("\nResult:")
 
 if is_flush:
-    print("Flush")
+    print("You have a Flush! All cards are of the same suit.")
 elif is_straight:
-    print("Straight")
+    print("You have a Straight! Your cards are in sequential order.")
 elif is_triple:
-    print("Three of a Kind")      
+    print("You have Three of a Kind! You have three cards of the same value.")
 elif is_pair:
-    print("Pair")
+    print("You have a Pair! You have two cards of the same value.")
 else:
-    print('No special hand.')
+    print("You have no special hand. Better luck next time!")
+    
