@@ -1,2 +1,2 @@
-Andrew is my lecturer
-Andrew is in this file for testing
+Michal is my lecturer
+Michal is in this file for testing
